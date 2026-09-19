@@ -1,4 +1,4 @@
-# Customer Segmentation using Machine Learning
+# Customer Segmentation 🛍️
 
 This repository contains a complete end-to-end Machine Learning pipeline for grouping mall customers into behavioral segments. By analyzing unlabeled customer data, the models identify distinct target demographics to optimize marketing strategies.
 
