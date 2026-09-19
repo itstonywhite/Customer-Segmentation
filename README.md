@@ -26,7 +26,7 @@ The models were evaluated using the **Silhouette Score** to measure cluster sepa
 
 ![Clustering Models Comparison Plot](./Clustering%20Models%20Comparison%20Plot.png)
 
-- K-Means successfully separated the data into **5 distinct customer groups** (e.g., High Income/High Spending, Low Income/Low Spending).
+- K-Means successfully separated the data into **5 customer groups**.
 - Both K-Means and Hierarchical Clustering yielded a Silhouette Score of **~0.55**.
 - The best-performing model (`K-Means`) and the `StandardScaler` have been exported as `.pkl` files for immediate use.
 
