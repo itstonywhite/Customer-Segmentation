@@ -24,6 +24,8 @@ The project tests and compares three fundamental unsupervised learning algorithm
 
 The models were evaluated using the **Silhouette Score** to measure cluster separation and cohesion.
 
+![Clustering Models Comparison Plot](./Clustering%20Models%20Comparison%20Plot.png)
+
 - K-Means successfully separated the data into **5 distinct customer groups** (e.g., High Income/High Spending, Low Income/Low Spending).
 - Both K-Means and Hierarchical Clustering yielded a Silhouette Score of **~0.55**.
 - The best-performing model (`K-Means`) and the `StandardScaler` have been exported as `.pkl` files for immediate use.
@@ -32,9 +34,16 @@ The models were evaluated using the **Silhouette Score** to measure cluster sepa
 
 ```text
 .
-├── Customer.csv                       # Dataset
-├── Customer Segmentation Models.ipynb # Main Jupyter Notebook with code & plots
-├── kmeans_segmentation_model.pkl      # Exported model for production
-├── scaler.pkl                         # Exported standard scaler
-└── README.md                          # Project documentation
+├── Customer.csv                           # Customers Dataset
+├── Customer Segmentation Models.ipynb     # Main Jupyter Notebook with code & plots
+├── Clustering Models Comparison Plot.png  # Models Comparison Plot
+├── kmeans_segmentation_model.pkl          # Exported model for production
+├── scaler.pkl                             # Exported standard scaler
+└── README.md                              # Project documentation
 ```
+
+---
+
+_This is my very first Unsupervised-learning project :)_
+
+\- [Tony White](https://github.com/itstonywhite) ✍️
