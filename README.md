@@ -12,6 +12,12 @@ This repository contains a complete end-to-end Machine Learning pipeline for gro
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
 ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge)
 
+**📥 Install required packages:**
+
+```text
+pip install numpy pandas scipy matplotlib seaborn scikit-learn joblib
+```
+
 ## 🧠 Algorithms Implemented
 
 The project tests and compares three fundamental unsupervised learning algorithms:
