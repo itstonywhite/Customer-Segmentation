@@ -45,6 +45,7 @@ The models were evaluated using the **Silhouette Score** to measure cluster sepa
 ├── Clustering Models Comparison Plot.png  # Models Comparison Plot
 ├── kmeans_segmentation_model.pkl          # Exported model for production
 ├── scaler.pkl                             # Exported standard scaler
+├── Plots                                  # Plots & Charts
 ├── requirements.txt                       # Dependencies
 └── README.md                              # Project documentation
 ```
