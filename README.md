@@ -30,7 +30,7 @@ The project tests and compares three fundamental unsupervised learning algorithm
 
 The models were evaluated using the **Silhouette Score** to measure cluster separation and cohesion.
 
-![Clustering Models Comparison Plot](./Clustering%20Models%20Comparison%20Plot.png)
+![Clustering Models Comparison Plot](./Plots/Clustering%20Models%20Comparison%20Plot.png)
 
 - K-Means successfully separated the data into **5 customer groups**.
 - Both K-Means and Hierarchical Clustering yielded a Silhouette Score of **~0.55**.
@@ -45,6 +45,7 @@ The models were evaluated using the **Silhouette Score** to measure cluster sepa
 ├── Clustering Models Comparison Plot.png  # Models Comparison Plot
 ├── kmeans_segmentation_model.pkl          # Exported model for production
 ├── scaler.pkl                             # Exported standard scaler
+├── requirements.txt                       # Dependencies
 └── README.md                              # Project documentation
 ```
 
