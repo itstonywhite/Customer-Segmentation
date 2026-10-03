@@ -50,7 +50,7 @@ ax2.plot(k_range, sil_scores, marker='s', color=color, linewidth=2)
 ax2.tick_params(axis='y', labelcolor=color)
 
 plt.title('Elbow Method and Silhouette Score Comparison')
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 
 # Final K-Means Model
@@ -64,7 +64,7 @@ sns.scatterplot(x=X['Annual Income (k$)'], y=X['Spending Score (1-100)'], hue=km
 plt.title(f'K-Means Clustering (K=5) | Silhouette: {kmeans_sil:.3f}', fontsize=14)
 plt.legend(title='Cluster', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 
 plt.figure(figsize=(10.6,6))
@@ -72,7 +72,7 @@ dendrogram = sch.dendrogram(sch.linkage(X_scaled, method='ward'))
 plt.title('Dendrogram for Hierarchical Clustering')
 plt.xlabel('Customers')
 plt.ylabel('Euclidean Distances')
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 # Final Hierarchical model
 hc = AgglomerativeClustering(n_clusters=5, metric='euclidean', linkage='ward')
@@ -84,7 +84,7 @@ sns.scatterplot(x=X['Annual Income (k$)'], y=X['Spending Score (1-100)'], hue=hc
 plt.title(f'Hierarchical Clustering (K=5) | Silhouette: {hc_sil:.3f}', fontsize=14)
 plt.legend(title='Cluster', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 
 # Final DBSCAN model 
@@ -102,13 +102,13 @@ sns.scatterplot(x=X['Annual Income (k$)'], y=X['Spending Score (1-100)'], hue=db
 plt.title(f'DBSCAN (eps=0.35, min=5) | Silhouette: {db_sil:.3f}', fontsize=14)
 plt.legend(title='Cluster (-1 is Noise)', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 
-# print("--- Model Evaluation (Silhouette Scores) ---")
-# print(f'K-Means:        {kmeans_sil:.4f}')
-# print(f'Hierarchical:   {hc_sil:.4f}')
-# print(f'DBSCAN:         {db_sil:.4f}\n')
+print("--- Model Evaluation (Silhouette Scores) ---")
+print(f'K-Means:        {kmeans_sil:.4f}')
+print(f'Hierarchical:   {hc_sil:.4f}')
+print(f'DBSCAN:         {db_sil:.4f}\n')
 
 # Comparison Visualization
 
@@ -154,11 +154,11 @@ ax.tick_params(colors='#333333')
 ax.grid(axis='y', linestyle='--', alpha=0.5, color='#cccccc')
 
 plt.tight_layout()
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 # Exporting the best model
 if kmeans_sil >= max(hc_sil, db_sil):
-    # print("\nK-Means is the best performing model. Exporting...")
+    print("\nK-Means is the best performing model. Exporting...")
     joblib.dump(kmeans, 'kmeans_segmentation_model.pkl')
     joblib.dump(scaler, 'scaler.pkl')
     print("Model and Scaler successfully saved to disk ✅\n")
