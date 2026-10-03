@@ -41,7 +41,8 @@ The models were evaluated using the **Silhouette Score** to measure cluster sepa
 ```text
 .
 ├── Customer.csv                           # Customers Dataset
-├── Customer Segmentation Models.ipynb     # Main Jupyter Notebook with code & plots
+├── Customer Segmentation Models.ipynb     # Main Jupyter Notebook
+├── Customer Segmentation Models.py        # Main Python File
 ├── Clustering Models Comparison Plot.png  # Models Comparison Plot
 ├── kmeans_segmentation_model.pkl          # Exported model for production
 ├── scaler.pkl                             # Exported standard scaler
